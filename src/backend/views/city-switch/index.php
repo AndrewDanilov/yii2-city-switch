@@ -4,8 +4,8 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\CitySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+/* @var $searchModel \andrewdanilov\cityswitch\backend\models\CitySwitchSearch */
 
 $this->title = 'Города';
 $this->params['breadcrumbs'][] = $this->title;
@@ -24,12 +24,12 @@ $this->params['breadcrumbs'][] = $this->title;
 		        'attribute' => 'id',
 		        'headerOptions' => ['width' => 100],
 	        ],
-            'name',
-            'coordinate_lat',
-            'coordinate_lon',
+            'city',
+            'city_name',
+            'order',
 
 	        [
-		        'class' => 'andrewdanilov\adminpanel\FontawesomeActionColumn',
+		        'class' => 'yii\grid\ActionColumn',
 		        'template' => '{update}{delete}',
 	        ],
         ],

@@ -6,6 +6,8 @@ use yii\web\Application;
 
 class Bootstrap implements BootstrapInterface
 {
+	public $dataParams = [];
+
 	/**
 	 * @inheritdoc
 	 */
@@ -19,6 +21,7 @@ class Bootstrap implements BootstrapInterface
 
 		$app->setModule('cityswitch', [
 			'class' => 'andrewdanilov\cityswitch\backend\Module',
+			'dataParams' => $this->dataParams,
 		]);
 	}
 }

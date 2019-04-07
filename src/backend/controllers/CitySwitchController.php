@@ -1,6 +1,7 @@
 <?php
 namespace andrewdanilov\cityswitch\backend\controllers;
 
+use andrewdanilov\cityswitch\backend\Module;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -36,8 +37,12 @@ class CitySwitchController extends Controller
 			return $this->redirect(['index']);
 		}
 
+		/* @var $module Module */
+		$module = Yii::$app->controller->module;
+
 		return $this->render('create', [
 			'model' => $model,
+			'dataParams' => $module->dataParams,
 		]);
 	}
 
@@ -56,8 +61,12 @@ class CitySwitchController extends Controller
 			return $this->redirect(['index']);
 		}
 
+		/* @var $module Module */
+		$module = Yii::$app->controller->module;
+
 		return $this->render('update', [
 			'model' => $model,
+			'dataParams' => $module->dataParams,
 		]);
 	}
 

@@ -40,9 +40,9 @@ return [
 		...
 		'cityswitch' => [
 			'class' => andrewdanilov\cityswitch\backend\Bootstrap,
-			// data which you want to be associated with each city
+			// data params which you want to be associated with each city
 			// in addition to city alias (`city`) and city name (`city_name`)
-			'data' => [
+			'dataParams' => [
 				'address' => 'City address',
 				'phone' => 'City phone',
 				'coords' => 'City address coordinates',
