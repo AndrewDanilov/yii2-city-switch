@@ -1,0 +1,30 @@
+.city-toggle {
+	display: none;
+}
+.city-menu {
+	position: relative;
+	padding: 8px 0;
+}
+.city-handler {
+	border-bottom: 1px dashed #333;
+	cursor: pointer;
+}
+.city-list {
+	display: none;
+	position: absolute;
+	top: 32px;
+	left: 0;
+	padding: 14px;
+	z-index: 1;
+	right: 0;
+	background-color: white;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+}
+.city-list a {
+	display: block;
+	text-align: center;
+	padding: 6px 0;
+}
+.city-menu:hover .city-list {
+	display: block;
+}
