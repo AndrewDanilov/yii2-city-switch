@@ -47,6 +47,8 @@ return [
 				'phone' => 'City phone',
 				'coords' => 'City address coordinates',
 			],
+			// defining access to module
+			'access' => ['admin'],
 		],
 	],
 ];
