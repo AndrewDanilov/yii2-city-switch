@@ -1,8 +1,8 @@
 {
     "name": "andrewdanilov/yii2-city-switch",
     "description": "Widget for switching city on site",
-    "type": "library",
-    "keywords": ["php","city","cities","switch"],
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","city","cities","switch"],
     "license": "MIT",
     "authors": [
         {
